@@ -8,6 +8,7 @@
     <title>The band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" href="./assets/img/yasuo.ico" type="image/x-icon" />
 </head>
 
@@ -34,11 +35,13 @@
             </ul>
             <!-- End: Nav -->
 
-            <!-- Begin: Search button-->
+            <div id="mobile-menu" class="menu-mobile-btn">
+                <i class="ti-menu menu-icon"></i>
+            </div>
+
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
-            <!-- End: Search button-->
 
         </div>
 
@@ -172,6 +175,36 @@
             <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function () {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function (event) {
+                var flag = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (flag) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
+
 </body>
 
 </html>
