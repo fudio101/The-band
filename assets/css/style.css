@@ -59,7 +59,11 @@ html {
     margin-top: 16px;
 }
 
-.pull-right{
+.mt-32 {
+    margin-top: 32px;
+}
+
+.pull-right {
     float: right !important;
 }
 
@@ -136,10 +140,10 @@ html {
     font-size: 12px;
 }
 
-#header .menu-mobile-btn{
+#header .menu-mobile-btn {
     position: absolute;
     top: 0;
-    right: 0;       
+    right: 0;
 }
 
 #header .menu-mobile-btn,
@@ -148,11 +152,11 @@ html {
     padding: 0 21px;
 }
 
-#header .menu-mobile-btn:hover{
+#header .menu-mobile-btn:hover {
     background-color: #ccc;
 }
 
-#header .menu-mobile-btn:hover .menu-icon{
+#header .menu-mobile-btn:hover .menu-icon {
     color: #000;
 }
 
@@ -204,7 +208,7 @@ html {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 16px 112px;    
+    padding: 64px 16px 112px;
 }
 
 #content .section-heading {
@@ -231,7 +235,7 @@ html {
 }
 
 #content .members-list {
-    margin-top: 47px;
+    margin-top: 31px;
 }
 
 #content .member-name {
@@ -280,7 +284,7 @@ html {
 }
 
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
@@ -317,6 +321,7 @@ html {
     margin-top: 15px;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover {
@@ -348,7 +353,7 @@ html {
     width: 100%;
 }
 
-.map-section img{
+.map-section img {
     width: 100%;
 }
 
@@ -357,29 +362,28 @@ html {
     text-align: center;
 }
 
-#footer .social{
+#footer .social {
     font-size: 24px;
 }
 
-#footer .social a{
+#footer .social a {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
 }
 
-#footer .social a:hover{
+#footer .social a:hover {
     color: rgba(0, 0, 0, 0.4);
 }
 
-#footer  .copyright{
+#footer .copyright {
     margin-top: 15px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-#footer  .copyright a{
+#footer .copyright a {
     color: rgba(0, 0, 0, 0.6);
 }
 
-#footer  .copyright a:hover{
+#footer .copyright a:hover {
     color: rgba(0, 0, 0, 0.4);
 }
-
