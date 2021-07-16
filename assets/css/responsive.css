@@ -101,6 +101,10 @@
         width: 60%;
     }
 
+    .tickets-list .sold-out{
+        margin-right: 5%;
+    }
+
     .contact-form {
         margin-top: 32px;
     }
